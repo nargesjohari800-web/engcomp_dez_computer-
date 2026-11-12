@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>رویدادهای انجمن علمی کاربردی کامپیوتر</title>
+  <meta content="رویدادهای انجمن علمی کاربردی کامپیوتر" name="description" />
+  <link href="Events.css" rel="stylesheet" />
+</head>
+
+<body id="top">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">
+          <img alt="لوگو انجمن" src="./imge/logo.jpeg" />
+        </span>
+        <span class="brand-text">
+          <strong>انجمن علمی</strong>
+          <small>کاربردی کامپیوتر</small>
+        </span>
+      </a>
+      <nav aria-label="منوی اصلی" class="main-nav">
+        <a class="active" href="index.html">
+          خانه
+        </a>
+        <a href="about.html">
+          درباره ما
+        </a>
+        <a href="Courses.html">
+          دوره‌ها
+        </a>
+        <a href="Events.html">
+          رویدادها
+        </a>
+        <a href="index.html#professors">
+          اساتید
+        </a>
+        <a href="About.html#team">
+          تیم اجرایی
+        </a>
+        <a href="https://eitaa.com/computer_uni_dez">
+          ارتباط با ما
+        </a>
+      </nav>
+      <!-- <div class="header-actions">
+                <a href="courses.html"
+                    class="btn btn-primary btn-header">
+                    مشاهده دوره‌ها
+                </a>
+
+            </div> -->
+      <div class="header-actions">
+        <!-- <a href="#search" class="search-btn" aria-label="جستجو">
+               ⌕
+            </a> -->
+        <a class="header-register" href="https://forms.gle/kcYnBs2MZ95eAxkc7">
+          عضویت
+        </a>
+        <button aria-label="باز کردن منو" class="menu-btn" id="menuBtn">
+          ☰
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">خانه</a>
+      <a href="about.html">درباره ما</a>
+      <a href="Events.html">رویدادها</a>
+      <a href="Courses.html">دوره‌ها</a>
+      <a href="About.html#team">اعضای انجمن</a>
+      <a href="https://eitaa.com/computer_uni_dez">ارتباط با ما</a>
+    </div>
+  </header>
+  <main class="inner-page">
+    <section class="page-intro">
+      <div class="page-intro-inner">
+        <div>
+          <span class="section-kicker">فعالیت‌های انجمن</span>
+          <h1>رویدادها</h1>
+          <p>کارگاه‌ها، سمینارها، مسابقات و دیگر برنامه‌های علمی و دانشجویی انجمن.</p>
+        </div>
+      </div>
+    </section>
+    <section aria-label="فیلتر رویدادها">
+      <div class="filter-panel">
+        <div class="filter-field">
+          <label for="eventSort">مرتب‌سازی</label>
+          <select id="eventSort">
+            <option value="newest">جدیدترین</option>
+            <option value="oldest">قدیمی‌ترین</option>
+            <option value="az">الفبا (الف تا ی)</option>
+            <option value="za">الفبا (ی تا الف)</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label for="eventCategory">نوع رویداد</label>
+          <select id="eventCategory">
+            <option value="all">همه رویدادها</option>
+            <option value="workshop">کارگاه</option>
+            <option value="seminar">سمینار</option>
+            <option value="competition">مسابقه</option>
+            <option value="meeting">نشست</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label for="eventStatus">وضعیت</label>
+          <select id="eventStatus">
+            <option value="all">همه</option>
+            <option value="register">ثبت‌نام</option>
+            <option value="soon">به‌زودی</option>
+            <option value="finished">برگزار شده</option>
+          </select>
+        </div>
+        <div class="results-count" id="eventCount"></div>
+      </div>
+    </section>
+    <section aria-label="فهرست رویدادها">
+
+      <div class="inner-card-grid" id="eventList">
+
+        <article class="inner-card event-card-page event-item" data-category="workshop" data-date="finished"
+          data-status="register" data-title="عنوان کارگاه">
+          <div class="event-pic poster-trigger" data-alt="پوستر کارگاه" data-image="msg4952504-98175.jpg">
+            <img alt="پوستر کارگاه" src="imge/cargah.jpg">
+          </div>
+          <div class="event-body">
+            <div class="event-top">
+              <span class="event-type">کارگاه</span>
+              <span class="event-date">تاریخ رویداد: ۲۰ آذر ۱۴۰۴ • ساعت ۱۴-۱۷</span>
+            </div>
+            <h2> کارگاه: تاثیر هوش مصنوعی بر متولوژی های تولید نرم افزار</h2>
+            <p> تمباحث پایه شبکه‌های عصبی و پیاده‌سازی عملی.</p>
+            <div class="event-actions">
+              <a href="#" class="btn btn-outline js-more-info" aria-expanded="false">
+                اطلاعات بیشتر
+              </a>
+              <a class="btn btn-primary btn-small" href="#">ثبت‌نام</a>
+            </div>
+            <div class="card-details" aria-hidden="true">
+              <div class="card-details-inner">
+
+                <h4>اطلاعات بیشتر</h4>
+
+                <p>
+                  متن کامل اطلاعات این رویداد را در این قسمت بنویسید.
+                </p>
+
+                <div class="detail-meta">
+                  <span>نوع برنامه</span>
+                  <span>ویژه دانشجویان</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="inner-card event-card-page event-item" data-category="seminar" data-date="" data-status="soon"
+          data-title="عنوان سمینار">
+          <div class="event-pic poster-trigger" data-alt="پوستر سمینار" data-image="photo1765676193(3).jpeg">
+            <img alt="پوستر سمینار"src="imge/sminar.jpg">
+          </div>
+          <div class="event-body">
+            <div class="event-top">
+              <span class="event-type">سمینار</span>
+              <span class="event-date">تاریخ رویداد:  ۱۰ شهریور ۱۴۰۴ • ساعت ۱۰-۱۲</span>
+            </div>
+            <h2> سمینار: آشنایی با روش های مقالع نویسی</h2>
+            <p>  بررسی آسیب‌پذیری‌ها و روش‌های امن‌سازی توسعه نرم‌افزار.</p>
+            <div class="event-actions">
+              <a href="#" class="btn btn-outline js-more-info" aria-expanded="false">
+                اطلاعات بیشتر
+              </a>
+              <a class="btn btn-primary btn-small" href="#">ثبت‌نام</a>
+            </div>
+            <div class="card-details" aria-hidden="true">
+              <div class="card-details-inner">
+
+                <h4>اطلاعات بیشتر</h4>
+
+                <p>
+                  متن کامل اطلاعات این رویداد را در این قسمت بنویسید.
+                </p>
+
+                <div class="detail-meta">
+                  <span>نوع برنامه</span>
+                  <span>ویژه دانشجویان</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="inner-card event-card-page event-item" data-category="competition" data-date=""
+          data-status="soon" data-title="عنوان مسابقه">
+          <div class="event-pic poster-trigger" data-alt="پوستر مسابقه" data-image="photo1765678284.jpeg">
+            <img alt="پوستر مسابقه" src="imge/./photo1765678284.jpeg">
+          </div>
+          <div class="event-body">
+            <div class="event-top">
+              <span class="event-type">مسابقه</span>
+              <span class="event-date">تاریخ رویداد:       ۵ آبان ۱۴۰۴</span>
+            </div>
+            <h2>مسابقات برنامه‌نویسی</h2>
+            <p>مسابقه برنامه‌نویسی دانشجویی</p>
+            <div class="event-actions">
+              <a href="#" class="btn btn-outline js-more-info" aria-expanded="false">
+                اطلاعات بیشتر
+              </a>
+              <a class="btn btn-primary btn-small" href="#">ثبت‌نام</a>
+            </div>
+            <div class="card-details" aria-hidden="true">
+              <div class="card-details-inner">
+
+                <h4>اطلاعات بیشتر</h4>
+
+                <p>
+                             تیم‌ها پروژه‌های خود را ارائه می‌کنند و جوایزی اهدا می‌شود.
+                </p>
+
+                <div class="detail-meta">
+                  <span>نوع برنامه</span>
+                  <span>ویژه دانشجویان</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </article>
+        <!-- <article class="inner-card event-card-page event-item" data-category="meeting" data-date=""
+          data-status="finished" data-title="عنوان نشست">
+          <div class="event-pic poster-trigger" data-alt="تصویر نشست انجمن" data-image="anjoman1.jpg">
+            <img alt="تصویر نشست انجمن" src="anjoman1.jpg" />
+          </div>
+          <div class="event-body">
+            <div class="event-top">
+              <span class="event-type">نشست</span>
+              <span class="event-date">تاریخ رویداد: —</span>
+            </div>
+            <h2>عنوان نشست</h2>
+            <p>توضیح کوتاه درباره این رویداد در این قسمت قرار می‌گیرد.</p>
+            <div class="event-actions">
+              <a href="#" class="btn btn-outline js-more-info" aria-expanded="false">
+                اطلاعات بیشتر
+              </a>
+              <a class="btn btn-primary btn-small" href="#">ثبت‌نام</a>
+            </div>
+            <div class="card-details" aria-hidden="true">
+              <div class="card-details-inner">
+
+                <h4>اطلاعات بیشتر</h4>
+
+                <p>
+                  متن کامل اطلاعات این رویداد را در این قسمت بنویسید.
+                </p>
+
+                <div class="detail-meta">
+                  <span>نوع برنامه</span>
+                  <span>ویژه دانشجویان</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </article> -->
+      </div>
+      <div class="empty-state" id="eventEmpty">رویدادی با این فیلتر پیدا نشد.</div>
+    </section>
+
+  </main>
+  <div aria-hidden="true" class="poster-lightbox" id="posterLightbox">
+    <button aria-label="بستن" class="poster-lightbox-close" type="button">×</button>
+    <img alt="" id="lightboxImage" src="" />
+  </div>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          ⌘
+        </div>
+        <h3>
+          انجمن علمی کاربردی کامپیوتر
+        </h3>
+        <p>
+          بستری برای یادگیری، تعامل و رشد علمی دانشجویان.
+        </p>
+      </div>
+      <div class="footer-column">
+        <h4>دسترسی سریع</h4>
+        <a href="index.html">خانه</a>
+        <a href="about.html">درباره ما</a>
+        <a href="Events.html">رویدادها</a>
+        <a href="Courses.html">دوره‌ها</a>
+      </div>
+      <div class="footer-column" id="channels">
+        <h4>راه‌های ارتباطی</h4>
+        <a href="https://www.instagram.com/engcomp_dez?igsh=MTJycG9nYjN0dGVkNQ==">اینستاگرام</a>
+        <a href="https://eitaa.com/computer_uni_dez">کانال انجمن</a>
+        <a href="mailto:cs@univ.edu">
+          ایمیل انجمن
+        </a>
+      </div>
+      <div class="footer-column">
+        <h4>همراه انجمن باشید</h4>
+        <p>
+          برای اطلاع از دوره‌ها و رویدادهای جدید
+          ما را دنبال کنید.
+        </p>
+        <div class="social-links">
+          <a aria-label="Instagram" href="https://www.instagram.com/engcomp_dez?igsh=MTJycG9nYjN0dGVkNQ==">IG</a>
+          <a aria-label="itaa" href="https://eitaa.com/computer_uni_dez">IT</a>
+          <a aria-label="Email" href="mailto:cs@univ.edu">@</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>
+        © تمامی حقوق برای انجمن علمی کاربردی کامپیوتر محفوظ است.
+      </span>
+    </div>
+  </footer>
+  <script>
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const sort = document.getElementById("eventSort");
+      const category = document.getElementById("eventCategory");
+      const status = document.getElementById("eventStatus");
+      const list = document.getElementById("eventList");
+      const count = document.getElementById("eventCount");
+      const empty = document.getElementById("eventEmpty");
+      const items = Array.from(document.querySelectorAll(".event-item"));
+
+      function renderEvents() {
+        const cat = category.value;
+        const stat = status.value;
+        const mode = sort.value;
+
+        const visible = items.filter(item => {
+          const categoryOk = cat === "all" || item.dataset.category === cat;
+          const statusOk = stat === "all" || item.dataset.status === stat;
+          return categoryOk && statusOk;
+        });
+
+        visible.sort((a, b) => {
+          if (mode === "az") return (a.dataset.title || "").localeCompare(b.dataset.title || "", "fa");
+          if (mode === "za") return (b.dataset.title || "").localeCompare(a.dataset.title || "", "fa");
+
+          const da = a.dataset.date || "";
+          const db = b.dataset.date || "";
+          if (!da && !db) return 0;
+          if (!da) return 1;
+          if (!db) return -1;
+
+          return mode === "newest"
+            ? db.localeCompare(da)
+            : da.localeCompare(db);
+        });
+
+        items.forEach(item => item.classList.add("card-hidden"));
+        visible.forEach(item => {
+          item.classList.remove("card-hidden");
+          list.appendChild(item);
+        });
+
+        count.textContent = visible.length + " رویداد";
+        empty.style.display = visible.length ? "none" : "block";
+      }
+
+      [sort, category, status].forEach(el => el.addEventListener("change", renderEvents));
+      renderEvents();
+
+      const lightbox = document.getElementById("posterLightbox");
+      const lightboxImage = document.getElementById("lightboxImage");
+      const close = lightbox.querySelector(".poster-lightbox-close");
+
+      document.querySelectorAll(".poster-trigger").forEach(trigger => {
+        trigger.addEventListener("click", () => {
+          lightboxImage.src = trigger.dataset.image;
+          lightboxImage.alt = trigger.dataset.alt || "";
+          lightbox.classList.add("active");
+          lightbox.setAttribute("aria-hidden", "false");
+          document.body.style.overflow = "hidden";
+        });
+      });
+
+      function closeLightbox() {
+        lightbox.classList.remove("active");
+        lightbox.setAttribute("aria-hidden", "true");
+        lightboxImage.src = "";
+        document.body.style.overflow = "";
+      }
+
+      lightbox.addEventListener("click", e => {
+        if (e.target === lightbox || e.target === lightboxImage) closeLightbox();
+      });
+      close.addEventListener("click", closeLightbox);
+      document.addEventListener("keydown", e => {
+        if (e.key === "Escape") closeLightbox();
+      });
+
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener("click", () => {
+          const open = mobileMenu.classList.toggle("active");
+          menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+        });
+        mobileMenu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
+          mobileMenu.classList.remove("active");
+          menuBtn.setAttribute("aria-expanded", "false");
+        }));
+      }
+    });
+
+
+
+    document.querySelectorAll(".js-more-info").forEach(button => {
+      button.addEventListener("click", e => {
+        e.preventDefault();
+
+        const card = button.closest(".inner-card");
+        const details = card.querySelector(".card-details");
+
+        const open = details.classList.toggle("open");
+
+        details.setAttribute(
+          "aria-hidden",
+          open ? "false" : "true"
+        );
+
+        button.setAttribute(
+          "aria-expanded",
+          open ? "true" : "false"
+        );
+
+        button.textContent =
+          open ? "بستن اطلاعات" : "اطلاعات بیشتر";
+      });
+    });
+
+
+
+
+
+    document.querySelectorAll(".js-more-info").forEach(button => {
+      button.addEventListener("click", e => {
+        e.preventDefault();
+
+        const card = button.closest(".inner-card");
+        const details = card.querySelector(".card-details");
+
+        const open = details.classList.toggle("open");
+
+        details.setAttribute(
+          "aria-hidden",
+          open ? "false" : "true"
+        );
+
+        button.setAttribute(
+          "aria-expanded",
+          open ? "true" : "false"
+        );
+
+        button.textContent =
+          open ? "بستن اطلاعات" : "اطلاعات بیشتر";
+      });
+    });
+  </script>
+</body>
+
+</html>

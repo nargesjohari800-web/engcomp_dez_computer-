@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>دوره‌های آموزشی انجمن علمی کاربردی کامپیوتر</title>
+  <meta content="دوره‌های آموزشی انجمن علمی کاربردی کامپیوتر" name="description" />
+  <link href="Courses.css" rel="stylesheet" />
+</head>
+
+<body id="top">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">
+          <img alt="لوگو انجمن" src="./imge/logo.jpeg" />
+        </span>
+        <span class="brand-text">
+          <strong>انجمن علمی</strong>
+          <small>کاربردی کامپیوتر</small>
+        </span>
+      </a>
+      <nav aria-label="منوی اصلی" class="main-nav">
+        <a class="active" href="index.html">
+          خانه
+        </a>
+        <a href="about.html">
+          درباره ما
+        </a>
+        <a href="Courses.html">
+          دوره‌ها
+        </a>
+        <a href="Events.html">
+          رویدادها
+        </a>
+        <a href="index.html#professors">
+          اساتید
+        </a>
+        <a href="About.html#team">
+          تیم اجرایی
+        </a>
+        <a href="https://eitaa.com/computer_uni_dez">
+          ارتباط با ما
+        </a>
+      </nav>
+      <!-- <div class="header-actions">
+                <a href="courses.html"
+                    class="btn btn-primary btn-header">
+                    مشاهده دوره‌ها
+                </a>
+
+            </div> -->
+      <div class="header-actions">
+        <!-- <a href="#search" class="search-btn" aria-label="جستجو">
+               ⌕
+            </a> -->
+        <a class="header-register" href="https://forms.gle/kcYnBs2MZ95eAxkc7">
+          عضویت
+        </a>
+        <button aria-label="باز کردن منو" class="menu-btn" id="menuBtn">
+          ☰
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">خانه</a>
+      <a href="about.html">درباره ما</a>
+      <a href="Events.html">رویدادها</a>
+      <a href="Courses.html">دوره‌ها</a>
+      <a href="About.html#team">اعضای انجمن</a>
+      <a href="https://eitaa.com/computer_uni_dez">ارتباط با ما</a>
+    </div>
+  </header>
+  <main class="inner-page">
+    <section class="page-intro">
+      <div class="page-intro-inner">
+        <div>
+          <span class="section-kicker">یادگیری و مهارت</span>
+          <h1>دوره‌های آموزشی</h1>
+          <p>دوره‌ها و آموزش‌های کاربردی انجمن برای تقویت مهارت‌های تخصصی و عملی دانشجویان.</p>
+        </div>
+      </div>
+    </section>
+    <section aria-label="فیلتر دوره‌ها">
+      <div class="filter-panel">
+        <div class="filter-field">
+          <label for="courseSort">مرتب‌سازی</label>
+          <select id="courseSort">
+            <option value="newest">جدیدترین</option>
+            <option value="oldest">قدیمی‌ترین</option>
+            <option value="az">الفبا (الف تا ی)</option>
+            <option value="za">الفبا (ی تا الف)</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label for="courseCategory">نوع دوره</label>
+          <select id="courseCategory">
+            <option value="all">همه دوره‌ها</option>
+            <option value="python">پایتون</option>
+            <option value="seo">سئو</option>
+            <option value="3dsmax">تری‌دی مکس</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label for="courseStatus">وضعیت</label>
+          <select id="courseStatus">
+            <option value="all">همه وضعیت‌ها</option>
+            <option value="register">ثبت‌نام</option>
+            <option value="soon">به‌زودی</option>
+            <option value="running">در حال برگزاری</option>
+            <option value="finish">اتمام شده </option>
+          </select>
+        </div>
+        <div class="results-count" id="courseCount"></div>
+      </div>
+    </section>
+    <section aria-label="فهرست دوره‌ها">
+
+      <div class="inner-card-grid" id="courseList">
+
+        <article class="inner-card course-card-page course-item" data-category="python" data-date=""
+          data-status="register" data-title="پایتون">
+          <div class="course-image poster-trigger" data-alt="پوستر دوره پایتون" data-image="py.jpeg">
+            <img alt="پوستر دوره پایتون" src="imge/py.jpeg" />
+            <span class="course-status">ثبت‌نام</span>
+          </div>
+          <div class="course-body">
+            <span class="course-category">پایتون</span>
+            <h2>دوره پایتون</h2>
+            <p>آموزش برنامه‌نویسی پایتون از مقدماتی تا پیشرفته.</p>
+            <div class="course-meta-page">
+              <span>مدرس: فروتن</span>
+              <span>تاریخ: 1405/02/01</span>
+            </div>
+            <div class="card-actions-page">
+              <a href="#" class="btn btn-outline js-more-info" aria-expanded="false">
+                اطلاعات بیشتر
+              </a>
+              <a class="btn btn-primary btn-small" href="#">ثبت‌نام</a>
+            </div>
+            <div class="card-details" aria-hidden="true">
+              <div class="card-details-inner">
+
+                <h4>اطلاعات بیشتر</h4>
+
+                <p>
+                  آموزش اصول برنامه‌نویسی با پایتون از مباحث پایه تا حل مسائل کاربردی و تقویت مهارت‌های لازم برای ورود
+                  به دنیای برنامه‌نویسی.
+                </p>
+
+                <div class="detail-meta">
+                  <span>نوع برنامه</span>
+                  <span>ویژه دانشجویان</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="inner-card course-card-page course-item" data-category="seo" data-date="" data-status="finish"
+          data-title="سئو">
+          <div class="course-image poster-trigger" data-alt="پوستر دوره سئو" data-image="seooo.jpeg">
+            <img alt="پوستر دوره سئو" src="imge/seooo.jpeg" />
+            <span class="course-status">به‌زودی</span>
+          </div>
+          <div class="course-body">
+            <span class="course-category">سئو</span>
+            <h2>دوره سئو</h2>
+            <p>آموزش بهینه‌سازی سایت و بازاریابی دیجیتال</p>
+            <div class="course-meta-page">
+              <span>مدرس: عطایی نژاد</span>
+              <span>تاریخ: 1405/03/10</span>
+            </div>
+            <div class="card-actions-page">
+              <a href="#" class="btn btn-outline js-more-info" aria-expanded="false">
+                اطلاعات بیشتر
+              </a>
+              <a class="btn btn-primary btn-small" href="#">ثبت‌نام</a>
+            </div>
+            <div class="card-details" aria-hidden="true">
+              <div class="card-details-inner">
+
+                <h4>اطلاعات بیشتر</h4>
+
+                <p>
+                  آموزش اصول بهینه‌سازی سایت برای موتورهای جست‌وجو، افزایش رتبه در نتایج گوگل، تولید محتوای هدفمند و
+                  آشنایی با مفاهیم بازاریابی دیجیتال.
+                </p>
+
+                <div class="detail-meta">
+                  <span>نوع برنامه</span>
+                  <span>ویژه دانشجویان</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="inner-card course-card-page course-item" data-category="3dsmax" data-date="" data-status="finish"
+          data-title="تری‌دی مکس">
+          <div class="course-image poster-trigger" data-alt="پوستر دوره تری‌دی مکس" data-image="3max.jpeg">
+            <img alt="پوستر دوره تری‌دی مکس" src="imge/3max.jpeg" />
+            <span class="course-status">به‌زودی</span>
+          </div>
+          <div class="course-body">
+            <span class="course-category">تری‌دی مکس</span>
+            <h2>دوره تری‌دی مکس</h2>
+            <p>مدل‌سازی، متریال‌دهی و رندر حرفه‌ای با 3Ds Max</p>
+            <div class="course-meta-page">
+              <span>مدرس: —</span>
+              <span>تاریخ: 1405/04/01</span>
+            </div>
+            <div class="card-actions-page">
+              <a href="#" class="btn btn-outline js-more-info" aria-expanded="false">
+                اطلاعات بیشتر
+              </a>
+              <a class="btn btn-primary btn-small" href="#">ثبت‌نام</a>
+            </div>
+            <div class="card-details" aria-hidden="true">
+              <div class="card-details-inner">
+
+                <h4>اطلاعات بیشتر</h4>
+
+                <p>
+                  آموزش اصول مدل‌سازی سه‌بعدی، طراحی فضا و ساخت مدل‌های حرفه‌ای با 3D Max، مناسب برای علاقه‌مندان به
+                  معماری، طراحی داخلی و مدل‌سازی سه‌بعدی.
+                </p>
+
+                <div class="detail-meta">
+                  <span>نوع برنامه</span>
+                  <span>ویژه دانشجویان</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="detail-meta">
+          <span>نوع برنامه</span>
+          <span>آموزشی و مهارتی</span>
+        </div>
+
+      </div>
+      </div>
+      </div>
+      </article>
+
+
+      <!-- دوره طراحی وبسایت پروژه محور وردپرس -->
+      <article class="inner-card course-card-page course-item" data-category="wordpress" data-date="" data-status="soon"
+        data-title="طراحی وبسایت پروژه محور وردپرس">
+
+        <div class="course-image poster-trigger" data-alt="پوستر دوره طراحی وبسایت وردپرس" data-image="wordpress.jpeg">
+          <img alt="پوستر دوره طراحی وبسایت وردپرس" src="imge/wordpars.jpg" />
+          <span class="course-status">به‌زودی</span>
+        </div>
+
+        <div class="course-body">
+          <span class="course-category">طراحی وب</span>
+          <h2>دوره طراحی وبسایت پروژه محور وردپرس</h2>
+          <p>آموزش طراحی و ساخت وبسایت با وردپرس به‌صورت پروژه محور</p>
+
+          <div class="course-meta-page">
+            <span>مدرس: </span>
+            <span>تاریخ: </span>
+          </div>
+
+          <div class="card-actions-page">
+            <a href="#" class="btn btn-outline js-more-info" aria-expanded="false">
+              اطلاعات بیشتر
+            </a>
+            <a class="btn btn-primary btn-small" href="#">ثبت‌نام</a>
+          </div>
+
+          <div class="card-details" aria-hidden="true">
+            <div class="card-details-inner">
+
+              <h4>اطلاعات بیشتر</h4>
+
+              <p>
+                در این دوره طراحی وبسایت با وردپرس به‌صورت پروژه محور آموزش داده می‌شود.
+                شرکت‌کنندگان با مراحل ساخت، طراحی و مدیریت یک وبسایت واقعی آشنا می‌شوند و مهارت‌های لازم برای ورود به
+                بازار کار را کسب می‌کنند.
+              </p>
+
+              <div class="detail-meta">
+                <span>نوع برنامه</span>
+                <span>تخصصی و پروژه محور</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- دوره طراحی وبسایت HTML CSS JavaScript -->
+      <article class="inner-card course-card-page course-item" data-category="web" data-date="" data-status="soon"
+        data-title="طراحی وبسایت پروژه محور HTML CSS JavaScript">
+
+        <div class="course-image poster-trigger" data-alt="پوستر دوره طراحی وبسایت HTML CSS JavaScript"
+          data-image="htmlcssjs.jpeg">
+          <img alt="پوستر دوره طراحی وبسایت HTML CSS JavaScript" src="imge/html.css.js.jpg" />
+          <span class="course-status">به‌زودی</span>
+        </div>
+
+        <div class="course-body">
+          <span class="course-category">طراحی وب</span>
+          <h2>دوره طراحی وبسایت پروژه محور HTML, CSS, JavaScript</h2>
+          <p>آموزش طراحی وبسایت با HTML، CSS و JavaScript به‌صورت پروژه محور</p>
+
+          <div class="course-meta-page">
+            <span>مدرس: </span>
+            <span>تاریخ: </span>
+          </div>
+
+          <div class="card-actions-page">
+            <a href="#" class="btn btn-outline js-more-info" aria-expanded="false">
+              اطلاعات بیشتر
+            </a>
+            <a class="btn btn-primary btn-small" href="#">ثبت‌نام</a>
+          </div>
+
+          <div class="card-details" aria-hidden="true">
+            <div class="card-details-inner">
+
+              <h4>اطلاعات بیشتر</h4>
+
+              <p>
+                در این دوره طراحی وبسایت از پایه با استفاده از HTML، CSS و JavaScript آموزش داده می‌شود.
+                آموزش‌ها به‌صورت پروژه محور هستند و هدف آن ایجاد مهارت عملی برای طراحی صفحات وب و ساخت وبسایت‌های
+                کاربردی است.
+              </p>
+
+              <div class="detail-meta">
+                <span>نوع برنامه</span>
+                <span>تخصصی و پروژه محور</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- دوره فتوشاپ و قدرت هوش مصنوعی -->
+      <article class="inner-card course-card-page course-item" data-category="photoshop" data-date="" data-status="soon"
+        data-title="فتوشاپ و قدرت هوش مصنوعی">
+
+        <div class="course-image poster-trigger" data-alt="پوستر دوره فتوشاپ و قدرت هوش مصنوعی"
+          data-image="photoshop-ai.jpeg">
+          <img alt="پوستر دوره فتوشاپ و قدرت هوش مصنوعی" src="imge/fotoshop.jpg" />
+          <span class="course-status">به‌زودی</span>
+        </div>
+
+        <div class="course-body">
+          <span class="course-category">گرافیک</span>
+          <h2>دوره فتوشاپ و قدرت هوش مصنوعی</h2>
+          <p>آموزش فتوشاپ و استفاده از ابزارهای هوش مصنوعی در طراحی</p>
+
+          <div class="course-meta-page">
+            <span>مدرس: </span>
+            <span>تاریخ: </span>
+          </div>
+
+          <div class="card-actions-page">
+            <a href="#" class="btn btn-outline js-more-info" aria-expanded="false">
+              اطلاعات بیشتر
+            </a>
+            <a class="btn btn-primary btn-small" href="#">ثبت‌نام</a>
+          </div>
+
+          <div class="card-details" aria-hidden="true">
+            <div class="card-details-inner">
+
+              <h4>اطلاعات بیشتر</h4>
+
+              <p>
+                در این دوره با ابزارها و قابلیت‌های کاربردی فتوشاپ و نقش هوش مصنوعی در فرآیند طراحی آشنا می‌شوید.
+                هدف دوره افزایش مهارت عملی در طراحی، ویرایش تصاویر و استفاده هوشمندانه از ابزارهای نوین گرافیکی است.
+              </p>
+
+              <div class="detail-meta">
+                <span>نوع برنامه</span>
+                <span>تخصصی و مهارتی</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- دوره VMWIRE -->
+      <article class="inner-card course-card-page course-item" data-category="ai" data-date="1404/1500"
+        data-status="soon" data-title="VMWIRE">
+
+        <div class="course-image poster-trigger" data-alt="پوستر دوره VMWIRE" data-image="vmwire.jpeg">
+          <img alt="پوستر دوره VMWIRE" src="imge/photo1765676193(3).jpeg" >
+          <span class="course-status">به‌زودی</span>
+        </div>
+
+        <div class="course-body">
+          <span class="course-category">هوش مصنوعی</span>
+          <h2>دوره VMWIRE</h2>
+          <p>آموزش مقدماتی هوش مصنوعی و یادگیری ماشین</p>
+
+          <div class="course-meta-page">
+            <span>مدرس: </span>
+            <span>تاریخ: 1404/1500</span>
+          </div>
+
+          <div class="card-actions-page">
+            <a href="#" class="btn btn-outline js-more-info" aria-expanded="false">
+              اطلاعات بیشتر
+            </a>
+            <a class="btn btn-primary btn-small" href="#">ثبت‌نام</a>
+          </div>
+
+          <div class="card-details" aria-hidden="true">
+            <div class="card-details-inner">
+
+              <h4>اطلاعات بیشتر</h4>
+
+              <p>
+                در این دوره با مفاهیم پایه هوش مصنوعی و یادگیری ماشین آشنا می‌شوید.
+                مباحث مقدماتی به زبان ساده ارائه می‌شوند تا شرکت‌کنندگان درک مناسبی از این حوزه پیدا کنند.
+              </p>
+
+              <div class="detail-meta">
+                <span>نوع برنامه</span>
+                <span>آموزشی و مهارتی</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- دوره فریلنسینگ -->
+      <article class="inner-card course-card-page course-item" data-category="freelancing" data-date=""
+        data-status="soon" data-title="فریلنسینگ و درآمد ارزی">
+
+        <div class="course-image poster-trigger" data-alt="پوستر دوره فریلنسینگ" data-image="freelancing.jpeg">
+          <img alt="پوستر دوره فریلنسینگ" src="imge/ferilnsing.jpg" >
+          <span class="course-status">به‌زودی</span>
+        </div>
+
+        <div class="course-body">
+          <span class="course-category">فریلنسینگ</span>
+          <h2>دوره فریلنسینگ و درآمد ارزی</h2>
+          <p>آموزش فریلنسینگ و روش‌های کسب درآمد ارزی</p>
+
+          <div class="course-meta-page">
+            <span>مدرس: </span>
+            <span>تاریخ: </span>
+          </div>
+
+          <div class="card-actions-page">
+            <a href="#" class="btn btn-outline js-more-info" aria-expanded="false">
+              اطلاعات بیشتر
+            </a>
+            <a class="btn btn-primary btn-small" href="#">ثبت‌نام</a>
+          </div>
+
+          <div class="card-details" aria-hidden="true">
+            <div class="card-details-inner">
+
+              <h4>اطلاعات بیشتر</h4>
+
+              <p>
+                در این دوره با مفاهیم فریلنسینگ، پیدا کردن پروژه و فعالیت در بازار کار آنلاین آشنا می‌شوید.
+                همچنین روش‌های مختلف کسب درآمد ارزی و نکات لازم برای شروع فعالیت حرفه‌ای آموزش داده می‌شود.
+              </p>
+
+              <div class="detail-meta">
+                <span>نوع برنامه</span>
+                <span>مهارتی و کاربردی</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- دوره طراحی رابط کاربری UI/UX -->
+      <article class="inner-card course-card-page course-item" data-category="uiux" data-date="" data-status="soon"
+        data-title="طراحی رابط کاربری مقدماتی UI/UX">
+
+        <div class="course-image poster-trigger" data-alt="پوستر دوره طراحی رابط کاربری UI UX" data-image="uiux.jpeg">
+          <img alt="پوستر دوره طراحی رابط کاربری UI UX" src="imge/uiux.jpg" >
+          <span class="course-status">به‌زودی</span>
+        </div>
+
+        <div class="course-body">
+          <span class="course-category">UI/UX</span>
+          <h2>دوره طراحی رابط کاربری مقدماتی UI/UX</h2>
+          <p>آموزش مقدماتی طراحی رابط کاربری و تجربه کاربری</p>
+
+          <div class="course-meta-page">
+            <span>مدرس: </span>
+            <span>تاریخ: </span>
+          </div>
+
+          <div class="card-actions-page">
+            <a href="#" class="btn btn-outline js-more-info" aria-expanded="false">
+              اطلاعات بیشتر
+            </a>
+            <a class="btn btn-primary btn-small" href="#">ثبت‌نام</a>
+          </div>
+
+          <div class="card-details" aria-hidden="true">
+            <div class="card-details-inner">
+
+              <h4>اطلاعات بیشتر</h4>
+
+              <p>
+                در این دوره با اصول مقدماتی طراحی رابط کاربری و تجربه کاربری آشنا می‌شوید.
+                مفاهیمی مانند رنگ، تایپوگرافی، چیدمان و طراحی صفحات کاربردی به‌صورت ساده و مهارتی آموزش داده می‌شوند.
+              </p>
+            </div>
+            <div class="empty-state" id="courseEmpty">دوره‌ای با این فیلتر پیدا نشد.</div>
+    </section>
+  </main>
+
+
+  <div aria-hidden="true" class="poster-lightbox" id="posterLightbox">
+    <button aria-label="بستن" class="poster-lightbox-close" type="button">×</button>
+    <img alt="" id="lightboxImage" src="" />
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          ⌘
+        </div>
+        <h3>
+          انجمن علمی کاربردی کامپیوتر
+        </h3>
+        <p>
+          بستری برای یادگیری، تعامل و رشد علمی دانشجویان.
+        </p>
+      </div>
+      <div class="footer-column">
+        <h4>دسترسی سریع</h4>
+        <a href="index.html">خانه</a>
+        <a href="about.html">درباره ما</a>
+        <a href="Events.html">رویدادها</a>
+        <a href="Courses.html">دوره‌ها</a>
+      </div>
+      <div class="footer-column" id="channels">
+        <h4>راه‌های ارتباطی</h4>
+        <a href="https://www.instagram.com/engcomp_dez?igsh=MTJycG9nYjN0dGVkNQ==">اینستاگرام</a>
+        <a href="https://eitaa.com/computer_uni_dez">کانال انجمن</a>
+        <a href="mailto:cs@univ.edu">
+          ایمیل انجمن
+        </a>
+      </div>
+      <div class="footer-column">
+        <h4>همراه انجمن باشید</h4>
+        <p>
+          برای اطلاع از دوره‌ها و رویدادهای جدید
+          ما را دنبال کنید.
+        </p>
+        <div class="social-links">
+          <a aria-label="Instagram" href="https://www.instagram.com/engcomp_dez?igsh=MTJycG9nYjN0dGVkNQ==">IG</a>
+          <a aria-label="itaa" href="https://eitaa.com/computer_uni_dez">IT</a>
+          <a aria-label="Email" href="mailto:cs@univ.edu">@</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>
+        © تمامی حقوق برای انجمن علمی کاربردی کامپیوتر محفوظ است.
+      </span>
+    </div>
+
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const sort = document.getElementById("courseSort");
+      const category = document.getElementById("courseCategory");
+      const status = document.getElementById("courseStatus");
+      const list = document.getElementById("courseList");
+      const count = document.getElementById("courseCount");
+      const empty = document.getElementById("courseEmpty");
+      const items = Array.from(document.querySelectorAll(".course-item"));
+
+      function renderCourses() {
+        const cat = category.value;
+        const stat = status.value;
+        const mode = sort.value;
+
+        const visible = items.filter(item => {
+          const categoryOk = cat === "all" || item.dataset.category === cat;
+          const statusOk = stat === "all" || item.dataset.status === stat;
+          return categoryOk && statusOk;
+        });
+
+        visible.sort((a, b) => {
+          if (mode === "az") return (a.dataset.title || "").localeCompare(b.dataset.title || "", "fa");
+          if (mode === "za") return (b.dataset.title || "").localeCompare(a.dataset.title || "", "fa");
+
+          const da = a.dataset.date || "";
+          const db = b.dataset.date || "";
+
+          // Empty dates retain the current order until real dates are entered.
+          if (!da && !db) return 0;
+          if (!da) return 1;
+          if (!db) return -1;
+
+          return mode === "newest"
+            ? db.localeCompare(da)
+            : da.localeCompare(db);
+        });
+
+        items.forEach(item => item.classList.add("card-hidden"));
+        visible.forEach(item => {
+          item.classList.remove("card-hidden");
+          list.appendChild(item);
+        });
+
+        count.textContent = visible.length + " دوره";
+        empty.style.display = visible.length ? "none" : "block";
+      }
+
+      [sort, category, status].forEach(el => el.addEventListener("change", renderCourses));
+      renderCourses();
+
+      // Lightbox
+      const lightbox = document.getElementById("posterLightbox");
+      const lightboxImage = document.getElementById("lightboxImage");
+      const close = lightbox.querySelector(".poster-lightbox-close");
+
+      document.querySelectorAll(".poster-trigger").forEach(trigger => {
+        trigger.addEventListener("click", () => {
+          lightboxImage.src = trigger.dataset.image;
+          lightboxImage.alt = trigger.dataset.alt || "";
+          lightbox.classList.add("active");
+          lightbox.setAttribute("aria-hidden", "false");
+          document.body.style.overflow = "hidden";
+        });
+      });
+
+      function closeLightbox() {
+        lightbox.classList.remove("active");
+        lightbox.setAttribute("aria-hidden", "true");
+        lightboxImage.src = "";
+        document.body.style.overflow = "";
+      }
+
+      lightbox.addEventListener("click", e => {
+        if (e.target === lightbox || e.target === lightboxImage) closeLightbox();
+      });
+      close.addEventListener("click", closeLightbox);
+      document.addEventListener("keydown", e => {
+        if (e.key === "Escape") closeLightbox();
+      });
+
+      // Shared mobile menu
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener("click", () => {
+          const open = mobileMenu.classList.toggle("active");
+          menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+        });
+        mobileMenu.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
+          mobileMenu.classList.remove("active");
+          menuBtn.setAttribute("aria-expanded", "false");
+        }));
+      }
+    });
+
+
+    document.querySelectorAll(".js-more-info").forEach(button => {
+      button.addEventListener("click", e => {
+        e.preventDefault();
+
+        const card = button.closest(".inner-card");
+        const details = card.querySelector(".card-details");
+
+        const open = details.classList.toggle("open");
+
+        details.setAttribute(
+          "aria-hidden",
+          open ? "false" : "true"
+        );
+
+        button.setAttribute(
+          "aria-expanded",
+          open ? "true" : "false"
+        );
+
+        button.textContent =
+          open ? "بستن اطلاعات" : "اطلاعات بیشتر";
+      });
+    });
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>
